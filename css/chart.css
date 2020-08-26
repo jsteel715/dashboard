@@ -1,0 +1,25 @@
+@import 'https://code.highcharts.com/css/highcharts.css';
+ 
+
+.highcharts-background {
+  /* color: #000; */
+  fill: rgb(255, 251, 251);
+}
+
+
+.highcharts-background {
+  /* color: #000; */
+  fill: rgba(155, 151, 151, 0);
+}
+
+.highcharts-color-0 {
+  fill: #9bfa4e;
+  stroke: #9bfa4e;
+}
+ 
+/* Titles */
+.highcharts-title {
+  fill: white;
+  font-size: 26px;
+  font-weight: bold;
+}

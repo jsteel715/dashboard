@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadCap</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/chart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat ">
+    <script src="/js/themes/my_theme.js"></script>
+        
+</head>
+<body>
+    <header>
+    <span>
+        <img src="../img/logo.png">
+        <h2>Dashboard</h2>
+    </span>
+    </header>
+    
+    <section>
+        
+        <div class="container">
+            <div><h3>Inoculation</h3></div>
+            <div class="value">
+                <div>
+                    <h1 class='temp'>63.8</h1>
+                    <p>Air Temp (F)</p>
+                </div>
+                <div id="temp_status" class="status status_ok" ><span></span></div>
+            </div>
+
+            <div class="value">
+                <div>
+                    <h1>55.6</h1>
+                    <p>Humidity (%)</p>
+                </div>
+                <div class="status status_ok"><span></span></div>
+            </div>
+
+            <div class="value">
+                <div>
+                    <h1>200</h1>
+                    <p>CO2 (ppm)</p>
+                </div>
+                <div class="status status_ok"><span></span></div>
+            </div>  
+        </div>
+    </section>
+
+    
+
+    <figure class="highcharts-figure">
+        <div><h3>Historical Data</h3></div>
+        <h4>Inocualtion</h4>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+        <div id="container"></div>
+    </figure>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="/js/charts.js"></script>
+    <script src="/js/demo_send.js"></script>
+    <script src="/js/test.js"></script>
+
+</body>
+</html>
