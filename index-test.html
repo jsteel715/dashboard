@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Sensor Data</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></script>
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+   </head>   
+
+<body class="h-100" style="background-color:black;">
+<h1>Test</h1>
+<div class="container-fluid h-40 text-white">
+   <div class="row h-100 justify-content-center align-items-center text-center">
+      <div class="col-md-6 my-auto">
+         <h1>Temperature:</h1>
+         <h1 id="temp"></h1>
+      </div>
+      <div class="col-md-6 my-auto">
+         <h1>Humidity:</h1>
+         <h1 id="humid"></h1>
+      </div>
+   </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script>
+   var socket = io();
+   socket.on('results', function(results) {
+   console.log(results);
+   var myObj = JSON.parse(results);
+   document.getElementById("temp").innerHTML = myObj.temp + " &deg;F";
+   document.getElementById("humid").innerHTML = myObj.humidity + " %";
+   });
+</script>
+</html>
+</body>
+</html>
