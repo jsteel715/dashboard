@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "node-dht-sensor": "^0.4.3",
+    "socket.io": "^2.0.3"
+  }
+}
